@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
@@ -11,11 +13,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
 	/*
 	 * Display text from a method, Whether a webpage is 404 - yes or not
 	 * (non-Javadoc) taken from
@@ -29,7 +31,10 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws MalformedURLException,
 			IOException {
 
-		Button bu1;
+		// icon
+		Image icon = new Image("resources/icon.png");
+
+		Button bu1 = new Button();
 
 		TextArea textArea1;
 
@@ -43,18 +48,18 @@ public class Main extends Application {
 		String bobob = cl.getImp(cl.getResponseCode(sit)); // then ado
 
 		Text t = new Text(10, 20, bobob);
+		Group ab = new Group(root);
 
-		Group ab = new Group(t, root);
-		Scene sc = new Scene(ab, 600, 300);
+		Scene sc = new Scene(root, 600, 330);
 
 		primaryStage.setScene(sc);
 		primaryStage.setTitle("Maly Test");
+		primaryStage.getIcons().add(icon);
 		primaryStage.setResizable(true);
 		primaryStage.centerOnScreen();
 		primaryStage.show();
 
 	}
-
 	public static void main(String[] args) {
 		launch(args);
 	}
