@@ -17,7 +17,7 @@ import javafx.scene.layout.StackPane;
 public class Sample implements Initializable {
 
 	@FXML
-	private TreeView tree;
+	private TreeView<?> tree;
 	@FXML
 	private TextArea area;
 	@FXML
