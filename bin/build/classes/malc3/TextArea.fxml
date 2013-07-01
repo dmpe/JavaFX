@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
- 
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
- 
-<TextArea id="textArea" xmlns:fx="http://javafx.com/fxml" fx:id="area" prefWidth="200.0" text="This is demo application ....text area control..." wrapText="true" />
