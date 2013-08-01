@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import jfxtras.labs.scene.control.*?>
+
+<AnchorPane minWidth="315.0" prefHeight="278.0000999999975" prefWidth="421.0" xmlns:fx="http://javafx.com/fxml" fx:controller="EventHandlerDemoController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" layoutX="14.0" layoutY="17.0" spacing="5.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="-1.0" text="Button" VBox.vgrow="SOMETIMES" />
+        <CheckBox fx:id="checkBox" mnemonicParsing="false" onAction="#handleCheckBoxAction" text="CheckBox" />
+        <ComboBox fx:id="comboBox" onAction="#handleComboBoxAction">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Hyperlink onAction="#handleHyperlinkAction" text="Hyperlink" />
+        <Slider fx:id="slider" />
+        <TextField fx:id="textField" onAction="#handleTextFieldAction" prefWidth="168.0" />
+      </children>
+    </VBox>
+    <ListView fx:id="listView" layoutX="212.0" layoutY="17.0" prefHeight="141.0" prefWidth="196.0" />
+    <TextArea fx:id="outputTextArea" layoutX="13.0" layoutY="182.0" prefHeight="82.0001220703125" prefWidth="395.0" wrapText="true" />
+    <Separator layoutX="14.0" layoutY="170.0" prefWidth="395.0" />
+  </children>
+</AnchorPane>

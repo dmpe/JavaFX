@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
+
+<Group xmlns:fx="http://javafx.com/fxml" fx:controller="game.BallGameController" fx:id="area">
+	<Circle fx:id="ball" radius="10.0" fill="BLACK" />
+	<Rectangle fx:id="borderTop" x="0" y="30" width="500" height="2" />
+	<Rectangle fx:id="borderBottom"  x="0" y="500" width="500" height="2"/>
+	<Rectangle fx:id="borderLeft"  x="0" y="0" width="2" height="500"/>
+	<Rectangle fx:id="borderRight"  x="498" y="0" width="2" height="500"/>
+	<Rectangle fx:id="paddle"  x="200" y="460" width="100" height="15" layoutX="20" fill="BLACK"/>
+	<Text fx:id="gameOverText" text="Game Over" fill="RED" layoutX="150" layoutY="330"/>
+	<Text fx:id="winnerText" text="You've won!" fill="GREEN" layoutX="150" layoutY="330"/>
+	<ToolBar minWidth="500">
+		<Button fx:id="startButton" text="Start"/>
+		<Button fx:id="quitButton" text="Quit"/>
+		<ProgressBar fx:id="progressBar" progress="100"/>
+		<Label fx:id="remainingBlocksLabel"/>
+	</ToolBar>
+	<ToolBar minWidth="500" layoutY="500">
+		<Hyperlink text="www.hascode.com" layoutX="360" layoutY="505" />
+	</ToolBar>
+</Group>

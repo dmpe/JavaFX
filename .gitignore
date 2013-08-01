@@ -6,3 +6,6 @@
 *.ear
 
 */bin
+*bin
+*.bin
+*bin

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+ 
+<VBox prefHeight="412.0" prefWidth="352.0" xmlns:fx="http://javafx.com/fxml" fx:controller="fxminclude.ParentController">
+  <children>
+    <HBox alignment="CENTER" prefHeight="53.0" prefWidth="352.0">
+      <children>
+        <Label id="Name" text="Name" />
+        <TextField fx:id="nameField" prefWidth="200.0" />
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="47.0" prefWidth="352.0">
+      <children>
+        <Label text="Value" />
+        <TextField fx:id="valueField" prefWidth="200.0" />
+      </children>
+    </HBox>
+    <Pane prefHeight="312.0" prefWidth="352.0">
+      <children>
+        <fx:include fx:id="title" source="title.fxml" layoutX="42.0" />   //here
+      </children>
+    </Pane>
+  </children>
+</VBox>
