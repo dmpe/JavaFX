@@ -19,7 +19,7 @@ public class uka extends Application {
 		AnchorPane s = new AnchorPane();
 		Scene p = new Scene(s);
 
-		Button w = new Button("new window");
+		Button w = new Button("Display Account info");
 		w.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
