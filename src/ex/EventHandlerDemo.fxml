@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import jfxtras.labs.scene.control.*?>
 
-<AnchorPane minWidth="315.0" prefHeight="278.0000999999975" prefWidth="421.0" xmlns:fx="http://javafx.com/fxml" fx:controller="EventHandlerDemoController">
+<AnchorPane minWidth="315.0" prefHeight="278.0000999999975" prefWidth="421.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ex.EventHandlerDemoController">
   <children>
     <VBox id="VBox" alignment="CENTER" layoutX="14.0" layoutY="17.0" spacing="5.0">
       <children>
